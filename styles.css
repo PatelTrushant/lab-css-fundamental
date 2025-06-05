@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:beige;
+    padding: 20px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin: 0;
+}
+
+.form-container {
+    display: flex;
+    min-height: 0;
+    max-width: 500px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden; /* Added this to prevent margin collapsing, would like to learn more about this*/
+} 
+
+.form-container h1 {
+    color: black;
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+form label {
+    display: inline-block; /* could not use block because it would move h1 up allowing it not to show */
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 15px;
+    /* margin-bottom: 15px; ISSUE whenever I add this it pushes my h1 "Registration Form" up */
+}
+
+form .button-group {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+form .button-group button{
+    flex: 1;
+    max-width: 47%;
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: 2px solid #ccc;  
+    border-radius: 8px; 
+    cursor: pointer;
+    width: 100%;  
+    box-sizing: border-box;
+    font-size: 13px;  
+}
+
+form .button-group button:hover {
+    background-color: #45a020;
+}
+
+.page-footer {
+    text-align: center;
+    font-size: 10px;
+    color: #444;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    width: 100%;
+}
